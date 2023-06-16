@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import "variables", "header";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.banner {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: $color1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        opacity: 0.25;
+    }
+
+    .content {
+        position: relative;
+        text-align: center;
+        max-width: 750px;
+
+        h2 {
+            color: $color2;
+            font-size: 2rem;
+            font-weight: 700;
+        }
+        p {
+            color: $color2;
+            font-size: 1.2rem;
+        }
+    }
+
+    header {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 40px 100px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 1000;
+
+        .logo {
+            color: $color2;
+            text-decoration: none;
+            font-size: 2.5em;
+            text-transform: uppercase;
+            font-weight: 700;
+            letter-spacing: 10px;
+        }
+
+        .menuToggle {
+            position: relative;
+            cursor: pointer;
+            svg {
+                color:  $color2;
+            }
+        }
+    }
+}
+
+.about {
+    position: relative;
+    width: 100vw;
+    display: flex;
+
+    .contentAbout {
+        background: $color3;
+        padding: 100px;
+        width: 50%;
+        
+        .tituloAbout {
+            color: $color2;
+            font-size: 30px;
+            font-weight: 600px;
+            letter-spacing: 1;
+            margin-bottom: 10px;
+        }
+
+        .textAbout {
+            color: $color2;
+            font-size: 17px;
+        }
+    }
+
+    .imgAbout {
+        background: url(../img/bg_about.jpg);
+        width: 50%;
+        background-size: cover;
+        background-position: center;
+    }
+    
+}
