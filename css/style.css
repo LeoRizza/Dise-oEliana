@@ -30,12 +30,12 @@
   max-width: 750px;
 }
 .banner .content h2 {
-  color: #fefae0;
+  color: #000000;
   font-size: 2rem;
   font-weight: 700;
 }
 .banner .content p {
-  color: #fefae0;
+  color: #000000;
   font-size: 1.2rem;
 }
 .banner header {
@@ -50,7 +50,7 @@
   z-index: 1000;
 }
 .banner header .logo {
-  color: #fefae0;
+  color: #000000;
   text-decoration: none;
   font-size: 2.5em;
   text-transform: uppercase;
@@ -62,28 +62,28 @@
   cursor: pointer;
 }
 .banner header .menuToggle svg {
-  color: #fefae0;
+  color: #000000;
 }
 
 .about {
   position: relative;
-  width: 100vw;
+  width: 100%;
   display: flex;
 }
 .about .contentAbout {
-  background: #606c38;
+  background: #bc6c25;
   padding: 100px;
   width: 50%;
 }
 .about .contentAbout .tituloAbout {
-  color: #fefae0;
+  color: #000000;
   font-size: 30px;
   font-weight: 600px;
   letter-spacing: 1;
   margin-bottom: 10px;
 }
 .about .contentAbout .textAbout {
-  color: #fefae0;
+  color: #000000;
   font-size: 17px;
 }
 .about .imgAbout {
@@ -91,6 +91,75 @@
   width: 50%;
   background-size: cover;
   background-position: center;
+}
+
+.servicios {
+  background: #606c38;
+  color: #000000;
+  text-align: center;
+  padding: 100px;
+}
+.servicios .tituloServicios {
+  font-weight: 600;
+}
+.servicios .textoServicios {
+  letter-spacing: 5px;
+  font-weight: 500;
+}
+.servicios .container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 60px;
+}
+.servicios .container .boxServicios {
+  position: relative;
+  background: #fefae0;
+  width: 350px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.servicios .container .boxServicios img {
+  width: 150px;
+}
+.servicios .container .boxServicios h2 {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.tecnologia {
+  background: #fefae0;
+  width: 100%;
+  padding: 100px;
+  padding-top: 300px;
+  margin-top: -300px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.tecnologia .boxTecno {
+  width: 50%;
+  max-width: 800px;
+  color: #283618;
+  padding: 20px;
+  line-height: 30px;
+}
+.tecnologia .imgTecno {
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  right: 0;
+}
+.tecnologia .imgTecno img {
+  padding: 10px 20px;
+  width: 13rem;
+  max-width: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */

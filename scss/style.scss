@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-@import "variables", "header";
+@import "variables", "header", "medias";
 
 * {
     margin: 0;
@@ -12,7 +12,7 @@
     position: relative;
     width: 100%;
     height: 100vh;
-    background-color: $color1;
+    background-color: $color4;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -75,11 +75,11 @@
 
 .about {
     position: relative;
-    width: 100vw;
+    width: 100%;
     display: flex;
 
     .contentAbout {
-        background: $color3;
+        background: $color1;
         padding: 100px;
         width: 50%;
         
@@ -104,4 +104,78 @@
         background-position: center;
     }
     
+}
+
+.servicios {
+    background: $color3;
+    color: $color2;
+    text-align: center;
+    padding: 100px;
+
+    .tituloServicios {
+        font-weight: 600;
+    }
+
+    .textoServicios {
+        letter-spacing: 5px;
+        font-weight: 500;
+    }
+
+    .container {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-top: 60px;
+        .boxServicios {
+            position: relative;
+            background: $color5;
+            width: 350px;
+            height: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img {
+                width: 150px;
+            }
+            h2 {
+                font-size: 30px;
+                font-weight: 600;
+            }
+        }
+    }
+}
+
+.tecnologia {
+    background: $color5;
+    width: 100%;
+    padding: 100px;
+    padding-top: 300px;
+    margin-top: -300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+    .boxTecno{
+        width: 50%;
+        max-width: 800px;
+        color: $color6;
+        padding: 20px;
+        line-height: 30px;
+    }
+    
+    .imgTecno {
+        width: 50%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        right: 0;
+        img {
+            padding: 10px 20px;
+            width: 13rem;
+            max-width: 100%;
+        }
+    }
 }
