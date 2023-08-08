@@ -1,0 +1,51 @@
+@media (max-width: 600px) {
+    .about {
+        flex-direction: column;
+
+        .contentAbout{
+            width: 100%;
+        }
+
+        .imgAbout{
+            width: 100vw;
+            height: 500px;
+
+        }
+    }
+
+    .servicios {
+        padding: 50px;
+
+        .container {
+            justify-content: center;
+        }
+
+        .boxServicios {
+            margin-bottom: 50px;
+            height: 200px;
+        }
+    }
+
+    .tecnologia {
+        margin-top: 0px;
+        padding: 50px;
+        flex-direction: column;
+        
+
+        .boxTecno {
+            width: 100%;
+        }
+
+        .imgTecno {
+            display: flex;
+            justify-content: center;
+
+            img {
+                max-width: none;
+                padding: 10px 40px;
+            }
+            
+        }
+    }
+
+}

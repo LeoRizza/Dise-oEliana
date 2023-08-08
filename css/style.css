@@ -162,4 +162,47 @@
   max-width: 100%;
 }
 
+.clientes {
+  background-color: #000000;
+}
+
+@media (max-width: 600px) {
+  .about {
+    flex-direction: column;
+  }
+  .about .contentAbout {
+    width: 100%;
+  }
+  .about .imgAbout {
+    width: 100vw;
+    height: 500px;
+  }
+  .servicios {
+    padding: 50px;
+  }
+  .servicios .container {
+    justify-content: center;
+  }
+  .servicios .boxServicios {
+    margin-bottom: 50px;
+    height: 200px;
+  }
+  .tecnologia {
+    margin-top: 0px;
+    padding: 50px;
+    flex-direction: column;
+  }
+  .tecnologia .boxTecno {
+    width: 100%;
+  }
+  .tecnologia .imgTecno {
+    display: flex;
+    justify-content: center;
+  }
+  .tecnologia .imgTecno img {
+    max-width: none;
+    padding: 10px 40px;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
