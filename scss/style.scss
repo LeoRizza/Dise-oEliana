@@ -181,7 +181,34 @@
 }
 
 .clientes {
-    background-color: $color2;
+    background-color: $color1;
+    padding: 100px;
+    text-align: center;
+
+    .imgClientes {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-top: 40px;
+
+        img{
+            max-width: 200px;
+            margin: 20px;
+            opacity: 0.24;
+            cursor: pointer;
+        }
+        
+        img:hover{
+            opacity: 1;
+        }
+    }
+}
+
+.testimonios {
+    position: relative;
+    padding: 100px;
+    background: $color3;
 }
 
 @import "medias";

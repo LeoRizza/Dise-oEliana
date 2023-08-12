@@ -163,7 +163,31 @@
 }
 
 .clientes {
-  background-color: #000000;
+  background-color: #bc6c25;
+  padding: 100px;
+  text-align: center;
+}
+.clientes .imgClientes {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+.clientes .imgClientes img {
+  max-width: 200px;
+  margin: 20px;
+  opacity: 0.24;
+  cursor: pointer;
+}
+.clientes .imgClientes img:hover {
+  opacity: 1;
+}
+
+.testimonios {
+  position: relative;
+  padding: 100px;
+  background: #606c38;
 }
 
 @media (max-width: 600px) {
