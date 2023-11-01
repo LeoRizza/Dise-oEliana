@@ -33,13 +33,13 @@
         max-width: 750px;
 
         h2 {
-            color: $color2;
+            color: $color6;
             font-size: 2rem;
             font-weight: 700;
         }
         p {
-            color: $color2;
-            font-size: 1.2rem;
+            color: $color6;
+            font-size: 1.4rem;
         }
     }
 
@@ -184,6 +184,7 @@
     background-color: $color1;
     padding: 100px;
     text-align: center;
+    color: $color2;
 
     .imgClientes {
         display: flex;
@@ -209,6 +210,7 @@
     position: relative;
     padding: 100px;
     background: $color3;
+    color: $color2;
 }
 
 @import "medias";
