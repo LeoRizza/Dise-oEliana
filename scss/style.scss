@@ -12,7 +12,7 @@
     position: relative;
     width: 100%;
     height: 100vh;
-    background-color: $color4;
+    background-color: $color1;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -33,12 +33,13 @@
         max-width: 750px;
 
         h2 {
-            color: $color6;
+            color: $color2;
             font-size: 2rem;
             font-weight: 700;
         }
+
         p {
-            color: $color6;
+            color: $color2;
             font-size: 1.4rem;
         }
     }
@@ -66,8 +67,9 @@
         .menuToggle {
             position: relative;
             cursor: pointer;
+
             svg {
-                color:  $color2;
+                color: $color2;
             }
         }
     }
@@ -79,10 +81,10 @@
     display: flex;
 
     .contentAbout {
-        background: $color1;
+        background: $color4;
         padding: 100px;
         width: 50%;
-        
+
         .tituloAbout {
             color: $color2;
             font-size: 30px;
@@ -103,7 +105,7 @@
         background-size: cover;
         background-position: center;
     }
-    
+
 }
 
 .servicios {
@@ -128,6 +130,7 @@
         align-items: center;
         flex-wrap: wrap;
         margin-top: 60px;
+
         .boxServicios {
             position: relative;
             background: $color5;
@@ -136,9 +139,11 @@
             display: flex;
             justify-content: center;
             align-items: center;
+
             img {
                 width: 150px;
             }
+
             h2 {
                 font-size: 30px;
                 font-weight: 600;
@@ -158,20 +163,21 @@
     align-items: center;
     flex-wrap: wrap;
 
-    .boxTecno{
+    .boxTecno {
         width: 50%;
         max-width: 800px;
         color: $color6;
         padding: 20px;
         line-height: 30px;
     }
-    
+
     .imgTecno {
         width: 50%;
         display: flex;
         flex-wrap: wrap;
         justify-content: flex-end;
         right: 0;
+
         img {
             padding: 10px 20px;
             width: 13rem;
@@ -193,14 +199,14 @@
         flex-wrap: wrap;
         margin-top: 40px;
 
-        img{
+        img {
             max-width: 200px;
             margin: 20px;
             opacity: 0.24;
             cursor: pointer;
         }
-        
-        img:hover{
+
+        img:hover {
             opacity: 1;
         }
     }
@@ -210,7 +216,274 @@
     position: relative;
     padding: 100px;
     background: $color3;
-    color: $color2;
+    color: $color1;
+    text-align: center;
+
+    .testimoniosContenedor {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 40px;
+        flex-wrap: wrap;
+
+        .testimonioBx {
+            background: #fff;
+            padding: 60px 50px;
+            width: 550px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: left;
+
+            p {
+                font-style: italic;
+            }
+
+            h3 {
+                width: 100%;
+                text-align: end;
+                font-weight: 500;
+                color: $color3;
+            }
+        }
+    }
 }
 
-@import "medias";
+.contacto {
+    background: $color4;
+    color: $color2;
+
+    .tituloContacto {
+        text-align: center;
+    }
+
+    .contactoContenedor {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+
+        .contactoBx {
+            align-items: center;
+            padding: 10px;
+            width: 100%;
+
+            .mapa {
+                border-radius: 20px;
+                border: solid 4px $color3 !important;
+                padding: 0;
+            }
+
+            .contactoInfo {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                width: 100%;
+
+                h4 {
+                    font-size: 1rem;
+                    padding: 10px 40px;
+                    text-transform: uppercase;
+                    background-color: rgba(28, 70, 112, 0.3)
+                }
+            }
+
+        }
+    }
+}
+
+.footer {
+    background: $color1;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    .dataFiscalBx {
+        .dataFiscal {
+            width: 200px;
+        }
+    }
+
+
+    .leo {
+        display: flex;
+        align-items: flex-start;
+        margin: 0;
+        font-size: 10px;
+        color: $color2;
+        vertical-align: bottom;
+    }
+
+    ul {
+        color: $color3;
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin: 0;
+        padding-bottom: 10%;
+
+        li {
+            list-style: none;
+
+            a {
+                text-decoration: none;
+                display: inline-block;
+                margin: 0 10px;
+
+                img {
+                    max-width: 50px;
+                }
+            }
+        }
+
+        p {
+            margin: 0;
+        }
+    }
+}
+
+@media (max-width: 991px) {
+
+    .contacto {
+        .contactoContenedor {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+    .banner {
+        padding: 50px;
+
+        header {
+            padding: 20px 50px;
+            .logo {
+                font-size: 1.5rem;
+            }
+        }
+
+        .content {
+
+            h2 {
+                font-size: 36px;
+            }
+
+            p {
+                font-size: 16px;
+            }
+        }
+    }
+
+    .about {
+        flex-direction: column;
+
+        .contentAbout,
+        .imgAbout {
+            width: 100%;
+            padding: 50px;
+            min-height: 400px;
+            text-align: center;
+        }
+    }
+
+    .footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 0;
+
+        ul {
+            padding: 0;
+        }
+
+        .dataFiscalBx {
+            text-align: center;
+            padding-top: 30px;
+            color: $color3;
+
+            .dataFiscal {
+                width: 150px;
+            }
+        }
+
+        .leo {
+            margin-top: 50px;
+        }
+    }
+
+    .servicios {
+        padding: 50px;
+
+        .container {
+            text-align: center;
+            margin-top: 20px;
+            justify-content: center;
+
+            .boxServicios {
+                margin: 20px;
+                width: 300px;
+                height: 350px;
+            }
+        }
+    }
+
+    .tecnologia {
+        padding: 50px;
+        padding-top: 300px;
+        justify-content: center;
+        flex-direction: column;
+
+        .imgTecno {
+            margin-top: 40px;
+            max-width: 250px;
+        }
+    }
+
+    .client {
+        padding: 50px;
+
+        .imgClientes {
+            /* display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center; */
+        }
+    }
+
+    .testimonios {
+        padding: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .testimoniosContenedor {
+            padding: 60px 40px;
+            max-width: 550px;
+            margin-bottom: 40px;
+
+            .testimonioBx {}
+        }
+
+        .testimoniosContenedor:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .testimonios {
+        padding: 10px;
+        .testimoniosContenedor {
+            width: auto;
+            padding: 20px;
+            .testimonioBx {
+                width: auto;
+            }
+        }
+    }
+    .tecnologia {
+        
+    }
+}

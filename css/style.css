@@ -10,7 +10,7 @@
   position: relative;
   width: 100%;
   height: 100vh;
-  background-color: #1DC690;
+  background-color: rgb(39, 137, 176);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -30,12 +30,12 @@
   max-width: 750px;
 }
 .banner .content h2 {
-  color: #000000;
+  color: #EAEAE0;
   font-size: 2rem;
   font-weight: 700;
 }
 .banner .content p {
-  color: #000000;
+  color: #EAEAE0;
   font-size: 1.4rem;
 }
 .banner header {
@@ -71,7 +71,7 @@
   display: flex;
 }
 .about .contentAbout {
-  background: #278AB0;
+  background: #1DC690;
   padding: 100px;
   width: 50%;
 }
@@ -94,7 +94,7 @@
 }
 
 .servicios {
-  background: #1C4670;
+  background: rgb(28, 70, 112);
   color: #EAEAE0;
   text-align: center;
   padding: 100px;
@@ -116,7 +116,7 @@
 }
 .servicios .container .boxServicios {
   position: relative;
-  background: #1DC690;
+  background: rgb(30, 200, 146);
   width: 350px;
   height: 400px;
   display: flex;
@@ -132,7 +132,7 @@
 }
 
 .tecnologia {
-  background: #1DC690;
+  background: rgb(30, 200, 146);
   width: 100%;
   padding: 100px;
   padding-top: 300px;
@@ -163,7 +163,7 @@
 }
 
 .clientes {
-  background-color: #278AB0;
+  background-color: rgb(39, 137, 176);
   padding: 100px;
   text-align: center;
   color: #EAEAE0;
@@ -188,46 +188,222 @@
 .testimonios {
   position: relative;
   padding: 100px;
-  background: #1C4670;
-  color: #EAEAE0;
+  background: rgb(28, 70, 112);
+  color: rgb(39, 137, 176);
+  text-align: center;
+}
+.testimonios .testimoniosContenedor {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 40px;
+  flex-wrap: wrap;
+}
+.testimonios .testimoniosContenedor .testimonioBx {
+  background: #fff;
+  padding: 60px 50px;
+  width: 550px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+}
+.testimonios .testimoniosContenedor .testimonioBx p {
+  font-style: italic;
+}
+.testimonios .testimoniosContenedor .testimonioBx h3 {
+  width: 100%;
+  text-align: end;
+  font-weight: 500;
+  color: rgb(28, 70, 112);
 }
 
-@media (max-width: 600px) {
+.contacto {
+  background: #1DC690;
+  color: #EAEAE0;
+}
+.contacto .tituloContacto {
+  text-align: center;
+}
+.contacto .contactoContenedor {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.contacto .contactoContenedor .contactoBx {
+  align-items: center;
+  padding: 10px;
+  width: 100%;
+}
+.contacto .contactoContenedor .contactoBx .mapa {
+  border-radius: 20px;
+  border: solid 4px rgb(28, 70, 112) !important;
+  padding: 0;
+}
+.contacto .contactoContenedor .contactoBx .contactoInfo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+.contacto .contactoContenedor .contactoBx .contactoInfo h4 {
+  font-size: 1rem;
+  padding: 10px 40px;
+  text-transform: uppercase;
+  background-color: rgba(28, 70, 112, 0.3);
+}
+
+.footer {
+  background: rgb(39, 137, 176);
+  padding: 20px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.footer .dataFiscalBx .dataFiscal {
+  width: 200px;
+}
+.footer .leo {
+  display: flex;
+  align-items: flex-start;
+  margin: 0;
+  font-size: 10px;
+  color: #EAEAE0;
+  vertical-align: bottom;
+}
+.footer ul {
+  color: rgb(28, 70, 112);
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 0;
+  padding-bottom: 10%;
+}
+.footer ul li {
+  list-style: none;
+}
+.footer ul li a {
+  text-decoration: none;
+  display: inline-block;
+  margin: 0 10px;
+}
+.footer ul li a img {
+  max-width: 50px;
+}
+.footer ul p {
+  margin: 0;
+}
+
+@media (max-width: 991px) {
+  .contacto .contactoContenedor {
+    display: flex;
+    flex-direction: column;
+  }
+  .banner {
+    padding: 50px;
+  }
+  .banner header {
+    padding: 20px 50px;
+  }
+  .banner header .logo {
+    font-size: 1.5rem;
+  }
+  .banner .content h2 {
+    font-size: 36px;
+  }
+  .banner .content p {
+    font-size: 16px;
+  }
   .about {
     flex-direction: column;
   }
-  .about .contentAbout {
-    width: 100%;
-  }
+  .about .contentAbout,
   .about .imgAbout {
-    width: 100vw;
-    height: 500px;
+    width: 100%;
+    padding: 50px;
+    min-height: 400px;
+    text-align: center;
+  }
+  .footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 0;
+  }
+  .footer ul {
+    padding: 0;
+  }
+  .footer .dataFiscalBx {
+    text-align: center;
+    padding-top: 30px;
+    color: rgb(28, 70, 112);
+  }
+  .footer .dataFiscalBx .dataFiscal {
+    width: 150px;
+  }
+  .footer .leo {
+    margin-top: 50px;
   }
   .servicios {
     padding: 50px;
   }
   .servicios .container {
+    text-align: center;
+    margin-top: 20px;
     justify-content: center;
   }
-  .servicios .boxServicios {
-    margin-bottom: 50px;
-    height: 200px;
+  .servicios .container .boxServicios {
+    margin: 20px;
+    width: 300px;
+    height: 350px;
   }
   .tecnologia {
-    margin-top: 0px;
     padding: 50px;
+    padding-top: 300px;
+    justify-content: center;
     flex-direction: column;
   }
-  .tecnologia .boxTecno {
-    width: 100%;
-  }
   .tecnologia .imgTecno {
-    display: flex;
-    justify-content: center;
+    margin-top: 40px;
+    max-width: 250px;
   }
-  .tecnologia .imgTecno img {
-    max-width: none;
-    padding: 10px 40px;
+  .client {
+    padding: 50px;
+  }
+  .client .imgClientes {
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center; */
+  }
+  .testimonios {
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .testimonios .testimoniosContenedor {
+    padding: 60px 40px;
+    max-width: 550px;
+    margin-bottom: 40px;
+  }
+  .testimonios .testimoniosContenedor:last-child {
+    margin-bottom: 0;
+  }
+}
+@media (max-width: 600px) {
+  .testimonios {
+    padding: 10px;
+  }
+  .testimonios .testimoniosContenedor {
+    width: auto;
+    padding: 20px;
+  }
+  .testimonios .testimoniosContenedor .testimonioBx {
+    width: auto;
   }
 }
 
