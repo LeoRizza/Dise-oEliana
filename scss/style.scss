@@ -544,6 +544,16 @@
             }
         }
     }
+
+    .tecnologia {
+        .boxTecno {
+            width: 100%;
+            .textoTecno {
+
+            }
+        }
+    }
+
     .contacto {
         .contactoContenedor {
             .contactoBx {
@@ -557,6 +567,13 @@
                     margin: 10px;
                 }
             }
+        }
+    }
+
+    .clientes {
+        .imgClientes {
+            display: flex;
+            justify-content: center;
         }
     }
 }
