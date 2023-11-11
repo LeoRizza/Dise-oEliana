@@ -1,4 +1,42 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@media (max-width: 600px) {
+  .about {
+    flex-direction: column;
+  }
+  .about .contentAbout {
+    width: 100%;
+  }
+  .about .imgAbout {
+    width: 100vw;
+    height: 500px;
+  }
+  .servicios {
+    padding: 50px;
+  }
+  .servicios .container {
+    justify-content: center;
+  }
+  .servicios .boxServicios {
+    margin-bottom: 50px;
+    height: 200px;
+  }
+  .tecnologia {
+    margin-top: 0px;
+    padding: 50px;
+    flex-direction: column;
+  }
+  .tecnologia .boxTecno {
+    width: 100%;
+  }
+  .tecnologia .imgTecno {
+    display: flex;
+    justify-content: center;
+  }
+  .tecnologia .imgTecno img {
+    max-width: none;
+    padding: 10px 40px;
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -43,7 +81,7 @@
   top: 0;
   left: 0;
   width: 100%;
-  padding: 40px 100px;
+  padding: 40px 80px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -54,12 +92,19 @@
 }
 .banner header .nav ul li {
   list-style-type: none;
-  margin: 0 10px;
+  margin: 0 5px;
+  font-weight: 2em;
+}
+.banner header .nav ul li .menuBtn {
+  text-decoration: none;
   color: #EAEAE0;
-  color: #EAEAE0;
-  font-size: 1.2vw;
-  font-weight: 600px;
-  letter-spacing: 1;
+  transition: all 0.2s ease-in-out;
+  text-transform: uppercase;
+  font-size: 0.8vw;
+  letter-spacing: 0.2em;
+}
+.banner header .nav ul li .menuBtn:hover {
+  transform: scale(1.1);
 }
 .banner header .logo {
   color: #EAEAE0;
@@ -260,7 +305,7 @@
   width: 100%;
 }
 .contacto .contactoContenedor .contactoBx .contactoInfo h4 {
-  font-size: 1rem;
+  font-size: 1.1em;
   padding: 10px 40px;
   text-transform: uppercase;
   background-color: rgba(28, 70, 112, 0.3);
@@ -301,6 +346,11 @@
   text-decoration: none;
   display: inline-block;
   margin: 0 10px;
+}
+.footer ul li a :hover {
+  transition: transform 0.5s ease-in-out;
+  filter: drop-shadow(0px 13px 19px rgba(0, 0, 0, 0.2));
+  scale: 1.2;
 }
 .footer ul li a img {
   max-width: 50px;
@@ -412,6 +462,12 @@
   .testimonios .testimoniosContenedor:last-child {
     margin-bottom: 0;
   }
+  .contacto .contactoContenedor .contactoBx .contactoInfo h4 {
+    font-size: 10px;
+  }
+  .contacto .contactoContenedor .contactoBx .mapa {
+    margin: 10px;
+  }
 }
 @media (max-width: 600px) {
   .testimonios {
@@ -423,6 +479,12 @@
   }
   .testimonios .testimoniosContenedor .testimonioBx {
     width: auto;
+  }
+  .contacto .contactoContenedor .contactoBx .contactoInfo h4 {
+    font-size: 10px;
+  }
+  .contacto .contactoContenedor .contactoBx .mapa {
+    margin: 10px;
   }
 }
 
