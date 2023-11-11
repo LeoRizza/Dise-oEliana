@@ -49,6 +49,18 @@
   align-items: center;
   z-index: 1000;
 }
+.banner header .nav ul {
+  display: flex;
+}
+.banner header .nav ul li {
+  list-style-type: none;
+  margin: 0 10px;
+  color: #EAEAE0;
+  color: #EAEAE0;
+  font-size: 1.2vw;
+  font-weight: 600px;
+  letter-spacing: 1;
+}
 .banner header .logo {
   color: #EAEAE0;
   text-decoration: none;
@@ -60,6 +72,7 @@
 .banner header .menuToggle {
   position: relative;
   cursor: pointer;
+  display: none;
 }
 .banner header .menuToggle svg {
   color: #EAEAE0;
@@ -309,6 +322,12 @@
   }
   .banner header .logo {
     font-size: 1.5rem;
+  }
+  .banner header .menuToggle {
+    display: flex;
+  }
+  .banner header .nav {
+    display: none;
   }
   .banner .content h2 {
     font-size: 36px;
