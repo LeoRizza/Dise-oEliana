@@ -420,9 +420,6 @@
     background-color: transparent;
     cursor: pointer;
   }
-  .banner header .visible {
-    display: flex;
-  }
   .banner header .nav {
     display: none;
     flex-direction: column;
