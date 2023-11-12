@@ -9,3 +9,14 @@ abrir.addEventListener("click", () => {
 cerrar.addEventListener("click", () => {
     nav.style.display = 'none';
 })
+
+const navBackground = document.querySelector("header");
+
+window.addEventListener("scroll", () => {
+
+    if (window.scrollY > 0) {
+        navBackground.style.backgroundColor = "rgba(39, 137, 176, 0.5)";
+    } else {
+        navBackground.style.backgroundColor = "transparent";
+    }
+});
