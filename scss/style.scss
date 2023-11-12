@@ -314,6 +314,7 @@
                 border-radius: 20px;
                 border: solid 4px $color3 !important;
                 padding: 0;
+                width: 90vw;
             }
 
             .contactoInfo {
@@ -599,8 +600,9 @@
 
                 }
 
-                .mapa {
-                    margin: 10px;
+                .contactoBx {
+                    width: 80%;
+
                 }
             }
         }

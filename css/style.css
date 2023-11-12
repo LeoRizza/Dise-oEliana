@@ -312,6 +312,7 @@
   border-radius: 20px;
   border: solid 4px rgb(28, 70, 112) !important;
   padding: 0;
+  width: 90vw;
 }
 .contacto .contactoContenedor .contactoBx .contactoInfo {
   display: flex;
@@ -529,8 +530,8 @@
   .contacto .contactoContenedor .contactoBx .contactoInfo h4 {
     font-size: 10px;
   }
-  .contacto .contactoContenedor .contactoBx .mapa {
-    margin: 10px;
+  .contacto .contactoContenedor .contactoBx .contactoBx {
+    width: 80%;
   }
 }
 @media (max-width: 600px) {
