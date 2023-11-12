@@ -54,7 +54,7 @@
         justify-content: space-between;
         align-items: center;
         z-index: 10000;
-        
+
 
         .logo {
             color: $color2;
@@ -84,7 +84,7 @@
         .nav {
             .cerrar-menu {
                 display: none;
-                
+
                 .menuBtn {
                     position: relative;
                     width: 50px;
@@ -397,6 +397,15 @@
     }
 }
 
+.botonWhatsApp img {
+    width: 50px;
+    position: fixed;
+    bottom: 1%;
+    right: 1%;
+    z-index: 10;
+    
+}
+
 //mediaquery-mediaquery-mediaquery-mediaquery-mediaquery-mediaquery-mediaquery-mediaquery-mediaquery-mediaquery-mediaquery
 //mediaquery-mediaquery-mediaquery-mediaquery-mediaquery-mediaquery-mediaquery-mediaquery-mediaquery-mediaquery-mediaquery
 //mediaquery-mediaquery-mediaquery-mediaquery-mediaquery-mediaquery-mediaquery-mediaquery-mediaquery-mediaquery-mediaquery
@@ -489,7 +498,7 @@
                             color: $color4;
                             font-size: 2rem;
                             gap: 20px;
-                            
+
                         }
                     }
                 }
@@ -597,16 +606,20 @@
     .contacto {
         .contactoContenedor {
             .contactoBx {
+                width: 80%;
+
                 .contactoInfo {
                     h4 {
-                        font-size: 10px;
+                        font-size: 20px;
                     }
 
                 }
 
                 .contactoBx {
-                    width: 80%;
 
+                    .mapa {
+                        width: 300px;
+                    }
                 }
             }
         }
@@ -638,17 +651,20 @@
     .contacto {
         .contactoContenedor {
             .contactoBx {
-                
-                
+                width: 100%;
+                align-items: center;
+                display: flex;
+                justify-content: center;
+
                 .contactoInfo {
                     h4 {
-                        font-size: 10px;
+                        font-size: 12px;
                     }
 
                 }
 
                 .mapa {
-                    /* width: 90vw; */
+                    width: 400px;
                 }
             }
         }

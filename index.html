@@ -13,7 +13,7 @@
 
 <body>
     <!-- Banner -->
-    <div class="banner">
+    <div class="banner" id="banner">
         <header>
             <a href="#" class="logo">Si.Mutual.</a>
             <button id="abrir" class="abrir-menu">
@@ -21,16 +21,16 @@
             </button>
             <nav class="nav" id="nav">
                 <button class="cerrar-menu" id="cerrar">
-                    <img src="/img/menu.svg" class="menuBtn" alt="Menú">
+                    <img src="/img/close.svg" class="menuBtn" alt="Menú">
                 </button>
                 <ul class="nav-list">
-                    <li><a href="">Inicio</a></li>
-                    <li><a href="">Nosotros</a></li>
-                    <li><a href="">Servicios</a></li>
-                    <li><a href="">Tecnologias</a></li>
-                    <li><a href="">Clientes</a></li>
-                    <li><a href="">Testimonios</a></li>
-                    <li><a href="">Contacto</a></li>
+                    <li><a href="#banner">Inicio</a></li>
+                    <li><a href="#about">Nosotros</a></li>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#tecnologia">Tecnologias</a></li>
+                    <li><a href="#clientes">Clientes</a></li>
+                    <li><a href="#testimonios">Testimonios</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
                 </ul>
             </nav>
         </header>
@@ -42,7 +42,7 @@
         </div>
     </div>
     <!-- Sobre -->
-    <section class="about">
+    <section class="about" id="about">
         <div class="contentAbout">
             <h2 class="tituloAbout">Sobre Nosotros</h2>
             <p class="textAbout">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur maxime distinctio
@@ -54,7 +54,7 @@
         <div class="imgAbout"></div>
     </section>
     <!-- Servicios -->
-    <section class="servicios">
+    <section class="servicios" id="servicios">
         <h2 class="tituloServicios">Servicios que ofrecemos</h2>
         <p class="textoServicios">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores magnam cumque
             ipsam cum, dolor debitis quae. Sint minus aliquam animi error earum, ad in dignissimos tempora, repellat
@@ -83,7 +83,7 @@
         </div>
     </section>
     <!-- Tecnologia -->
-    <section class="tecnologia">
+    <section class="tecnologia" id="tecnologia">
         <div class="boxTecno">
             <h2 class="tituloTecno">A la vanguardia en tecnologia</h2>
             <p class="textoTecno">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure harum, delectus
@@ -98,7 +98,7 @@
         </div>
     </section>
     <!-- Clientes -->
-    <section class="clientes">
+    <section class="clientes" id="clientes">
         <h2 class="tituloCliente">Nuestros Clientes</h2>
         <p class="textClientes">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi ratione dolorum nihil,
             molestias doloribus recusandae incidunt a velit nisi repudiandae iusto cum voluptas! Doloremque velit
@@ -111,7 +111,7 @@
         </div>
     </section>
     <!-- Testimonios -->
-    <section class="testimonios">
+    <section class="testimonios" id="testimonios">
         <h2 class="testimoniosTitulo">Que dicen de nosotros?</h2>
         <div class="testimoniosContenedor">
             <div class="testimonioBx">
@@ -135,7 +135,7 @@
         </div>
     </section>
     <!-- Contacto -->
-    <section class="contacto">
+    <section class="contacto" id="contacto">
         <h2 class="tituloContacto">Contactanos</h2>
         <div class="contactoContenedor">
             <div class="container contactoBx">
@@ -180,6 +180,10 @@
         </div>
         <p class="leo">by.LeoRizza</p>
     </section>
+    <div class="botonWhatsApp">
+        <a href="https://api.whatsapp.com/send?phone=+5493424212169" target="_blank"><img class="img-fluid"
+                src="./img/whatsapp.svg" alt="icono WhatsApp"></a>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
         crossorigin="anonymous"></script>

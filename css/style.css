@@ -377,6 +377,14 @@
   margin: 0;
 }
 
+.botonWhatsApp img {
+  width: 50px;
+  position: fixed;
+  bottom: 1%;
+  right: 1%;
+  z-index: 10;
+}
+
 @media (max-width: 991px) {
   .contacto .contactoContenedor {
     display: flex;
@@ -529,11 +537,14 @@
   .testimonios .testimoniosContenedor:last-child {
     margin-bottom: 0;
   }
-  .contacto .contactoContenedor .contactoBx .contactoInfo h4 {
-    font-size: 10px;
-  }
-  .contacto .contactoContenedor .contactoBx .contactoBx {
+  .contacto .contactoContenedor .contactoBx {
     width: 80%;
+  }
+  .contacto .contactoContenedor .contactoBx .contactoInfo h4 {
+    font-size: 20px;
+  }
+  .contacto .contactoContenedor .contactoBx .contactoBx .mapa {
+    width: 300px;
   }
 }
 @media (max-width: 600px) {
@@ -550,11 +561,17 @@
   .tecnologia .boxTecno {
     width: 100%;
   }
+  .contacto .contactoContenedor .contactoBx {
+    width: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
   .contacto .contactoContenedor .contactoBx .contactoInfo h4 {
-    font-size: 10px;
+    font-size: 12px;
   }
   .contacto .contactoContenedor .contactoBx .mapa {
-    /* width: 90vw; */
+    width: 400px;
   }
   .clientes .imgClientes {
     display: flex;
