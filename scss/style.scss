@@ -45,7 +45,7 @@
     }
 
     header {
-        position: absolute;
+        position: fixed;
         top: 0;
         left: 0;
         width: 100%;
@@ -53,53 +53,68 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        z-index: 1000;
-
-        .nav {
-            ul {
-                display: flex;
-                li{
-
-                    list-style-type: none;
-                    margin: 0 5px;
-                    font-weight: 2em;
-
-                    .menuBtn {
-                        text-decoration: none;
-                        color: $color2;
-                        transition: all .2s ease-in-out;
-                        text-transform: uppercase;
-                        font-size: 0.8vw;
-                        letter-spacing: 0.2em;
-                    }
-
-                    .menuBtn:hover {
-
-                        transform: scale(1.1);
-                    }
-                    
-                }
-            }
-        }
+        z-index: 10000;
 
         .logo {
             color: $color2;
             text-decoration: none;
-            font-size: 2.5em;
+            font-size: 2.5rem;
             text-transform: uppercase;
             font-weight: 700;
             letter-spacing: 10px;
         }
 
-        .menuToggle {
-            position: relative;
-            cursor: pointer;
+        .abrir-menu {
             display: none;
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 0;
 
-            svg {
-                color: $color2;
+            .menuBtn {
+                position: relative;
+                width: 50px;
+                height: 50px;
+                opacity: 100;
+                transition: fill 0.3s ease;
             }
         }
+
+        .nav {
+            .cerrar-menu {
+                display: none;
+                
+                .menuBtn {
+                    position: relative;
+                    width: 50px;
+                    height: 50px;
+                    opacity: 100;
+                    margin-right: 2rem;
+                    margin-top: 2rem;
+                    transition: fill 0.3s ease;
+                }
+            }
+
+            .nav-list {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                padding: 0;
+                margin: 0;
+
+                li {
+                    list-style: none;
+                    margin: 0 5px;
+
+                    a {
+                        text-decoration: none;
+                        color: $color2;
+                        font-size: 1.2vw;
+                    }
+                }
+            }
+        }
+
     }
 }
 
@@ -394,30 +409,94 @@
     .banner {
         padding: 50px;
 
-        header {
-            padding: 20px 50px;
-            .logo {
-                font-size: 1.5rem;
-            }
-            .menuToggle {
-                
-                display: flex;
-    
-            }
-            .nav {
-                display: none;
-            }
+        img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0.25;
         }
 
         .content {
+            position: relative;
+            text-align: center;
+            max-width: 750px;
 
             h2 {
-                font-size: 36px;
+                color: $color2;
+                font-size: 2rem;
+                font-weight: 700;
             }
 
             p {
-                font-size: 16px;
+                color: $color2;
+                font-size: 1.4rem;
             }
+        }
+
+        header {
+            padding: 20px 50px;
+            display: flex;
+            justify-content: space-between;
+
+
+
+            .logo {
+                font-size: 1.5rem;
+            }
+
+            .abrir-menu {
+                display: block;
+                border: 0;
+                font-size: 1.25rem;
+                background-color: transparent;
+                cursor: pointer;
+            }
+
+            .nav {
+                opacity: 0;
+                visibility: hidden;
+                display: flex;
+                flex-direction: column;
+                align-items: end;
+                position: absolute;
+                top: 0;
+                right: 0;
+                height: 100vh;
+                background-color: $color3;
+                box-shadow: 0 0 0 100vmax rgba(39, 137, 176, 0.7);
+
+                .visible {
+                    opacity: 1!important;
+                    visibility: visible;
+                }
+
+                .cerrar-menu {
+                    display: block;
+                    border: 0;
+                    font-size: 1.25rem;
+                    background-color: transparent;
+                    cursor: pointer;
+                    color: $color2;
+                }
+
+                .nav-list {
+                    flex-direction: column;
+                    align-items: end;
+                    padding: 2rem;
+
+                    li {
+                        a {
+                            color: $color4;
+                            font-size: 2rem;
+                            gap: 20px;
+                        }
+                    }
+                }
+            }
+
         }
     }
 
@@ -516,6 +595,7 @@
             margin-bottom: 0;
         }
     }
+
     .contacto {
         .contactoContenedor {
             .contactoBx {
@@ -523,8 +603,9 @@
                     h4 {
                         font-size: 10px;
                     }
-                    
+
                 }
+
                 .mapa {
                     margin: 10px;
                 }
@@ -536,9 +617,11 @@
 @media (max-width: 600px) {
     .testimonios {
         padding: 10px;
+
         .testimoniosContenedor {
             width: auto;
             padding: 20px;
+
             .testimonioBx {
                 width: auto;
             }
@@ -548,9 +631,8 @@
     .tecnologia {
         .boxTecno {
             width: 100%;
-            .textoTecno {
 
-            }
+            .textoTecno {}
         }
     }
 
@@ -561,8 +643,9 @@
                     h4 {
                         font-size: 10px;
                     }
-                    
+
                 }
+
                 .mapa {
                     margin: 10px;
                 }
