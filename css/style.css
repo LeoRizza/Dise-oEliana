@@ -420,10 +420,11 @@
     background-color: transparent;
     cursor: pointer;
   }
-  .banner header .nav {
-    opacity: 0;
-    visibility: hidden;
+  .banner header .visible {
     display: flex;
+  }
+  .banner header .nav {
+    display: none;
     flex-direction: column;
     align-items: end;
     position: absolute;
@@ -432,10 +433,6 @@
     height: 100vh;
     background-color: rgb(28, 70, 112);
     box-shadow: 0 0 0 100vmax rgba(39, 137, 176, 0.7);
-  }
-  .banner header .nav .visible {
-    opacity: 1 !important;
-    visibility: visible;
   }
   .banner header .nav .cerrar-menu {
     display: block;

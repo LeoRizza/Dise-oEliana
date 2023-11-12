@@ -455,10 +455,12 @@
                 cursor: pointer;
             }
 
-            .nav {
-                opacity: 0;
-                visibility: hidden;
+            .visible {
                 display: flex;
+            }
+            
+            .nav {
+                display: none;
                 flex-direction: column;
                 align-items: end;
                 position: absolute;
@@ -467,11 +469,6 @@
                 height: 100vh;
                 background-color: $color3;
                 box-shadow: 0 0 0 100vmax rgba(39, 137, 176, 0.7);
-
-                .visible {
-                    opacity: 1!important;
-                    visibility: visible;
-                }
 
                 .cerrar-menu {
                     display: block;
